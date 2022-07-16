@@ -31,7 +31,11 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Vim
 let g:onedark_config = {
-    \ 'style': 'darker',
-    \ 'transparent': v:true
+  \ 'style': 'darker',
+  \ 'transparent': v:true
 \}
 colorscheme onedark
+
+let g:coc_filetype_map = {
+  \ 'yaml.ansible': 'ansible',
+\}
