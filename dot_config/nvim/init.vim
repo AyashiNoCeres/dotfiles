@@ -15,6 +15,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'navarasu/onedark.nvim'
 Plug 'brooth/far.vim'
 Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf.vim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -34,8 +35,13 @@ let g:onedark_config = {
   \ 'style': 'darker',
   \ 'transparent': v:true
 \}
-colorscheme onedark
 
 let g:coc_filetype_map = {
   \ 'yaml.ansible': 'ansible',
 \}
+
+let g:lightline = {
+  \ 'colorscheme': 'one',
+\}
+
+colorscheme onedark
